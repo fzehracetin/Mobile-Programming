@@ -34,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkPassword(email.getText(), password.getText())) {
-                    Intent createMailIntent = new Intent(MainActivity.this, CreateMailActivity.class);
-                    startActivity(createMailIntent);
+                    // Intent createMailIntent = new Intent(MainActivity.this, CreateMailActivity.class);
+                    // startActivity(createMailIntent);
+                    Intent listActivityIntent = new Intent(MainActivity.this, ListActivity.class);
+                    startActivity(listActivityIntent);
                 }
                 else {
                     email.setText("");
